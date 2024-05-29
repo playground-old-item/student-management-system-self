@@ -1,0 +1,37 @@
+<form [formGroup]="form">
+    <div class="container">
+        <h1>Update Student</h1>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                    <input (keyup.enter)="findUser()" formControlName="id" type="text" placeholder="Student Id" class="from-control">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                    <input formControlName="firstName" type="text" placeholder="First Name" Disabled class="from-control">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                    <input formControlName="lastName" type="text" placeholder="Second Name" Disabled class="from-control">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="form-group">
+                    <input formControlName="email" type="text" placeholder="Email"  Disabled class="from-control">
+                </div>
+            </div>
+            <br><br>
+            <div class="col-12 right-align">
+                <button class="btn btn-info" type="button" (click)="updateUser()">Update Student</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
